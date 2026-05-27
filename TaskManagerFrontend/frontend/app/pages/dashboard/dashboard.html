@@ -1,0 +1,126 @@
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h2>Task Manager</h2>
+        <button class="sidebar-link active" type="button" data-dashboard-view-target="dashboard">Dashboard</button>
+        <button class="sidebar-link" type="button" data-dashboard-view-target="settings">Settings</button>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <section data-dashboard-view="dashboard">
+            <h1>Dashboard</h1>
+
+            <!-- CARDS -->
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Tasks</h3>
+                    <p id="total">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Todo</h3>
+                    <p id="todo">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>In Progress</h3>
+                    <p id="progress">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Done</h3>
+                    <p id="done">0</p>
+                </div>
+            </div>
+
+            <!-- TASK LIST -->
+            <h2>Tasks</h2>
+            <div id="taskList"></div>
+
+            <!-- FORM -->
+            <div class="form">
+                <input id="title" placeholder="Task title"/>
+                <button class="add" id="addTaskButton" type="button">Add Task</button>
+            </div>
+        </section>
+
+        <section class="settings-view hidden" data-dashboard-view="settings">
+            <h1>Settings</h1>
+
+            <div class="settings-layout">
+                <div class="settings-menu">
+                    <button class="settings-option active" type="button" data-settings-section-target="profile">Profile</button>
+                    <button class="settings-option" type="button" data-settings-section-target="appearance">Appearance / Theme</button>
+                    <button class="settings-option" type="button" data-settings-section-target="task-preferences">Task Preferences</button>
+                    <button class="settings-option" type="button" data-settings-section-target="notifications">Notifications</button>
+                    <button class="settings-option" type="button" data-settings-section-target="security">Security</button>
+                </div>
+
+                <div class="settings-content">
+                    <section class="settings-section" data-settings-section="profile">
+                        <h2>Profile</h2>
+                        <label>
+                            Display name
+                            <input type="text" placeholder="Your name">
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" placeholder="you@example.com">
+                        </label>
+                    </section>
+
+                    <section class="settings-section hidden" data-settings-section="appearance">
+                        <h2>Appearance / Theme</h2>
+                        <label>
+                            Theme
+                            <select>
+                                <option>Light</option>
+                                <option>Dark</option>
+                                <option>System</option>
+                            </select>
+                        </label>
+                    </section>
+
+                    <section class="settings-section hidden" data-settings-section="task-preferences">
+                        <h2>Task Preferences</h2>
+                        <label>
+                            Default task status
+                            <select>
+                                <option>Todo</option>
+                                <option>In progress</option>
+                                <option>Done</option>
+                            </select>
+                        </label>
+                    </section>
+
+                    <section class="settings-section hidden" data-settings-section="notifications">
+                        <h2>Notifications</h2>
+                        <label class="settings-check">
+                            <input type="checkbox">
+                            Email notifications
+                        </label>
+                        <label class="settings-check">
+                            <input type="checkbox">
+                            Task reminders
+                        </label>
+                    </section>
+
+                    <section class="settings-section hidden" data-settings-section="security">
+                        <h2>Security</h2>
+                        <label>
+                            Current password
+                            <input type="password">
+                        </label>
+                        <label>
+                            New password
+                            <input type="password">
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

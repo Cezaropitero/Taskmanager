@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    width: 100%;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+    background:white;
+}
+
+.hidden {
+    display: none;
+}
+
+.settings-layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+}
+
+.settings-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.settings-option {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.settings-option.active {
+    background: #1f2937;
+    color: white;
+}
+
+.settings-content {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.settings-section label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.settings-section input,
+.settings-section select {
+    max-width: 360px;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.settings-check {
+    flex-direction: row !important;
+    align-items: center;
+}

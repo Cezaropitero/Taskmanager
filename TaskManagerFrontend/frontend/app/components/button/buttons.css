@@ -1,0 +1,63 @@
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background: black;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-nav
+{
+    cursor:pointer;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-submit
+{
+    width: 100%;
+    padding: 12px;
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add,
+.delete {
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add {
+    background: #1f2937;
+    color: white;
+}
+
+.delete
+{
+    background: red;
+    color: white;
+}

@@ -1,0 +1,24 @@
+/* 1. variables */
+@import url("variables.css");
+
+/* 2. reset */
+@import url("base/reset.css");
+
+/* 3. layout */
+@import url("base/layout.css");
+
+/* 4. typography */
+@import url("base/typography.css");
+
+/* 5. components */
+@import url("../app/components/button/buttons.css");
+@import url("../app/components/card/card.css");
+@import url("../app/components/input/input.css");
+@import url("../app/components/sidebar/sidebar.css");
+@import url("../app/components/task-card/task-card.css");
+
+/* 6. pages */
+@import url("../app/pages/landing/landing.css");
+@import url("../app/pages/login/login.css");
+@import url("../app/pages/register/register.css");
+@import url("../app/pages/dashboard/dashboard.css");

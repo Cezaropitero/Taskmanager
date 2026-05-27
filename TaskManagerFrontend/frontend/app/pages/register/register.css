@@ -1,0 +1,16 @@
+.password-requirements {
+    margin: 0;
+    padding: 0;
+}
+
+.password-requirements p {
+    margin: 2px 0;   /* 👈 mniejsze odstępy */
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#confirm-password
+{
+    margin-top: 15px;
+}
