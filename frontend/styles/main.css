@@ -2,13 +2,13 @@
 @import url("variables.css");
 
 /* 2. reset */
-@import url("base/reset.css");
+@import url("frontend/styles/base/reset.css");
 
 /* 3. layout */
-@import url("base/layout.css");
+@import url("frontend/styles/base/layout.css");
 
 /* 4. typography */
-@import url("base/typography.css");
+@import url("frontend/styles/base/typography.css");
 
 /* 5. components */
 @import url("../app/components/button/buttons.css");
