@@ -1,5 +1,5 @@
 /* 1. variables */
-@import url("variables.css");
+@import url("variable.css");
 
 /* 2. reset */
 @import url("frontend/styles/base/reset.css");
